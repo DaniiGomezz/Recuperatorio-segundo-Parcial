@@ -1,0 +1,89 @@
+<%- include('partials/header') %>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="row mb-2">
+            <div class="col-md-5">
+                <a href="/" id="btnRegresar" class="btn btn-sm btn-primary">Regresar</a>
+                <a href="/" class="btn btn-sm btn-info text-light">Inicio</a>
+            </div>
+        </div>
+
+        <div class="mx-auto">
+            <form id="formNuevaReserva" method="POST" class="rounded border p-3">
+                <h3 class="mb-3 text-center bg-primary text-light rounded p-2">Actualizar reserva</h3>
+                <div class="row">
+                    <div class="col col-md-6 col-sm-12 mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" required="true" class="form-control" id="nombre" name="nombre">
+                    </div>
+                    <div class="col col-md-6 col-sm-12 mb-3">
+                        <label for="apellido" class="form-label">Apellido</label>
+                        <input type="text" required="true" class="form-control" id="apellido"
+                            name="apellido">
+                    </div>
+                </div>
+                <div class="row">
+                
+                    <div class="col col-md-6 col-sm-12 mb-3">
+                        <label for="fecha_ida" class="form-label">Ida</label>
+                        <input type="datetime-local" required="true" class="form-control" id="fecha_ida"
+                            name="fecha_ida">
+                    </div>
+
+                   
+                    <div class="col col-md-6 col-sm-12 mb-3">
+                        <label for="fecha_vuelta" class="form-label">Vuelta</label>
+                        <input type="datetime-local" required="true" class="form-control" id="fecha_vuelta"
+                            name="fecha_vuelta">
+                    </div>
+
+                </div>
+
+               
+                    
+                    <div class="col col-sm-12 col-md-6 mb-3">
+                        <label for="fecha_de_la_reserva" class="form-label">Fecha de reserva</label>
+                        <input type="datetime-local" required="true" class="form-control" id="fechaReserva"
+                            name="fecha_de_la_reserva">
+                    </div> 
+                    <div class="row">
+                   
+                    <div class="col col-sm-12 col-md-6 mb-3">
+                        <label for="destino" class="form-label">Destino</label>
+                        <input type="text" required="true" class="form-control" id="destino"
+                            name="destino">
+                    </div>
+                </div>
+
+                <div class="row">
+                    
+                    <div class="col col-sm-12 col-md-6 mb-3">
+                        <label for="telefono" class="form-label">Teléfono</label>
+                        <input type="text" required="true" class="form-control" id="telefono"
+                            name="telefono">
+                    </div>
+
+                   
+                    <div class="col col-sm-12 col-md-6 mb-3">
+                        <label for="dni" class="form-label">DNI:</label>
+                        <input type="number" required="true" class="form-control" id="dni" name="dni">
+                    </div>
+                </div>
+
+                <div class="row d-flex align-items-center justify-content-end">
+                    <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2 col-2 mb-1">
+                        <button type="submit" class="w-100 btn btn-sm btn-primary">Guardar</button>
+                    </div>
+                    <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2 col-2 mb-1">
+                        <a href="/" class="w-100 btn btn-sm btn-secondary">Cancelar</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="/js/editar-reserva.js"></script>
+
+<%- include('partials/footer') %>
