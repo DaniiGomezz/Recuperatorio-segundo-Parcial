@@ -29,6 +29,10 @@ const Reserva = sequelize.define('Reserva', {
         allowNull: false
 
     },
+    fecha_de_la_reserva:{
+        type: DataTypes.DATE,
+        allowNull: false
+    },
     fecha_ida: {
         type: DataTypes.DATE,
         allowNull: false
@@ -38,18 +42,16 @@ const Reserva = sequelize.define('Reserva', {
         allowNull: false,
     },
 
-    pasajeros: {
-        type: DataTypes.INTEGER,
+    destino: {
+        type: DataTypes.STRING(50),
         allowNull: false
     },
     telefono: {
         type: DataTypes.STRING(100),
         allowNull: false
     },
-    email: {
-        type: DataTypes.STRING(50),
-        allowNull: false
-    },
+   
+   
     estado: {
         type: DataTypes.BOOLEAN,
         defaultValue: true
