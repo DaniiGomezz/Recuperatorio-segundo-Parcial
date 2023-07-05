@@ -7,6 +7,8 @@ const path = require('path');
 require('dotenv').config();
 require('ejs');
 
+const { conexionDB } = require("./database");
+conexionDB ();
 
 
 const app = express();
